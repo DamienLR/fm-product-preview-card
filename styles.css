@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2eae2;
+}
+
+/* utility classes */
+
+.font-primary {
+  font-family: "Fraunces", serif;
+}
+
+.font-secondary {
+  font-family: "Montserrat", sans-serif;
+}
+
+.weight500 {
+  font-weight: 500;
+}
+
+.weight700 {
+  font-weight: 700;
+}
+
+/* containers */
+
+.container-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container-img {
+  background-image: url("./images/image-product-mobile.jpg");
+  background-size: cover;
+  width: 343px;
+  height: 240px;
+  border-radius: 10px 10px 0 0;
+}
+
+.container-txt {
+  padding: 1.5rem;
+}
+
+.container-prices {
+  display: flex;
+  align-items: center;
+  margin: 0.75rem 0 0;
+}
+
+/* text */
+
+.subheader {
+  color: #6c7289;
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.header {
+  color: #1c232b;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.paragraph {
+  color: #6c7289;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.price-current {
+  color: #3d8168;
+  margin-right: 18px;
+}
+
+.price-previous {
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #3d8168;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.btn:hover {
+  background-color: #1a4032;
+  cursor: pointer;
+}
+
+.btn-txt {
+  font-size: 14px;
+}
+
+/* other */
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 611px;
+  width: 343px;
+}
+
+.img-product {
+  border-radius: 10px 10px 0 0;
+  height: 240px;
+  width: 343px;
+}
+
+.img-cart {
+  margin-right: 0.75rem;
+}
+
+@media only screen and (min-width: 650px) {
+  .card {
+    height: 450px;
+    width: 600px;
+    display: flex;
+  }
+
+  .container-img {
+    background-image: url("./images/image-product-desktop.jpg");
+    height: 450px;
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .container-txt {
+    width: 300px;
+    height: 450px;
+    padding: 2rem;
+  }
+
+  .header {
+    margin: 20px 0 1.5rem;
+  }
+
+  .price-current {
+    margin-right: 20px;
+  }
+}
